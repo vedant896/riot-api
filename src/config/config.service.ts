@@ -25,7 +25,7 @@ export class ConfigService implements TypeOrmOptionsFactory {
       username: this.envConfig.POSTGRES_USER,
       password: this.envConfig.POSTGRES_PASS,
       database: this.envConfig.POSTGRES_DB,
-      synchronize: false,
+      synchronize: true,
       keepConnectionAlive: true,
       logging: false,
       entities: [__dirname + '/../*/entities/*.entity{.ts,.js}'],
