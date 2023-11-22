@@ -18,5 +18,4 @@ COPY . /app
 RUN npm run build
 EXPOSE 3000
 EXPOSE 6379
-CMD concurrently "/usr/bin/redis-server --bind '0.0.0.0'" "npm run start:dev"
-# CMD npm run start:dev
+CMD concurrently "/usr/bin/redis-server --bind '0.0.0.0'" "sleep 5s; npm run start:dev"
