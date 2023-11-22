@@ -22,7 +22,7 @@ import { SummonerProcessor } from './summoner.processor';
       store: redisStore,
 
       // Store-specific configuration:
-      host: 'riot-api-0001-001.6yyfff.0001.use2.cache.amazonaws.com',
+      host: 'master.riot-api.6yyfff.use2.cache.amazonaws.com',
       port: 6379,
     }),
 
