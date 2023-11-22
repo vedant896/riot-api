@@ -23,7 +23,7 @@ import { SummonerProcessor } from './summoner.processor';
 
       // Store-specific configuration:
       host: 'master.riot-api.6yyfff.use2.cache.amazonaws.com',
-      port: 6379,
+      port: '6379',
     }),
 
     HttpModule,

@@ -29,6 +29,10 @@ export class ConfigService implements TypeOrmOptionsFactory {
       keepConnectionAlive: true,
       logging: false,
       entities: [__dirname + '/../*/entities/*.entity{.ts,.js}'],
+      ssl: {
+        // require: true,
+        rejectUnauthorized: false,
+      },
       // migrationsTableName: 'migration',
       // migrations: ['src/migration/*.ts'],
     };
